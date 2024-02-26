@@ -1,0 +1,285 @@
+body {
+    background-color: #f7e7ce;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {/* Header */
+    color: #fff8dc;
+    background-color: #355e3b;
+    font-size: 4em; 
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    padding: 15px 20px;
+    margin-right: 40px;
+    margin-left: 40px ;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-family: 'Gabriola', sans-serif;
+}
+
+h2 {/* buttom info */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #355e3b; 
+    color: #fff8dc; /* Text color */
+    padding: 1px 0; 
+    text-align: center;
+    font-size: 15px; 
+}
+
+.here p {/* info writing */
+    font-family: 'Gabriola';
+    font-size: 25px;
+    color: #355e3b;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.buttons button {
+    display: flex; /* Set the display to flex */
+    flex-direction: column;
+    background-color: #355e3b;
+    font-family:'Gabriola';
+    font-size: 25px;
+    color: #fff8dc;
+    padding: 10px 180px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left:10px;
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+}
+
+button:hover {
+    background-color: #8a9a5b;
+}
+.container {
+    display: flex;
+    align-items: left; 
+    max-width: 700px; /* Set maximum width for the container */
+    margin-left: 20px ; 
+}
+
+.illustration img {
+    margin-right: 200px;
+    margin-left: 100px ;  
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.panel {
+    display: none; /* Hide the panel by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(138, 154, 91,0.8); /* Semi-transparent background */
+    z-index: 999; /* Ensure the panel appears above other content */
+    justify-content: center;
+    align-items: center;
+}
+
+.panel.show {
+    display: flex; /* Show the panel when it has the 'show' class */
+}
+#panel2{
+    background-color: rgba(138, 154, 91,0.8);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#addBookForm {
+    margin-bottom: 20px;
+    color: #fff8dc;
+    background-color:#013220 ;
+    border: 1px solid #ccc; 
+    border-radius: 50px; 
+    padding: 100px; 
+    margin-bottom: 10px; 
+    max-width: 400px; 
+    width: 100%; 
+}
+
+#addBookForm label {
+    font-weight: bold; 
+}
+
+#addBookForm input[type="text"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+#addBookForm input[type="submit"] {
+    background-color: #355e3b; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#addBookForm input[type="submit"]:hover {
+    background-color: #8a9a5b; 
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+    justify-content: center; 
+}
+/* Style for the card layout */
+.book-card {
+    background-color:#013220 ;
+    border: 1px solid #013220;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px #01170f;
+    padding: 20px;
+    margin: 10px; 
+    min-width: 100px; /* Set minimum width for each card */
+    color: #fff8dc;
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+.backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #355e3b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.backButton:hover {
+    background-color: #8a9a5b;
+}
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 600px; /* Set a fixed maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+#panel3 {
+    background-color: rgba(138, 154, 91,0.8);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#removeBookForm {
+    margin-bottom: 20px; 
+    color: #fff8dc;
+    background-color:#013220 ;
+    border: 1px solid #ccc; 
+    border-radius: 50px; 
+    padding: 100px; 
+    margin-bottom: 10px; 
+    max-width: 400px; 
+    width: 100%; 
+}
+
+#removeBookForm label {
+    font-weight: bold;
+}
+
+#removeBookForm input[type="text"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+#removeBookForm input[type="submit"] {
+    background-color: #355e3b; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+#removeBookForm input[type="submit"]:hover {
+    background-color: #8a9a5b }
+
+#panel4 {
+    padding: 20px; 
+}
+
+#searchForm {
+    color: #ffffff; 
+    margin-bottom: 20px; 
+    position: absolute; /* Position the search form */
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); /* Center the search form horizontally */
+    width: 80%; 
+    max-width: 400px; 
+    background-color: #013220; 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1; /* Ensure the search form appears above other content */
+}
+
+#searchForm label {
+    font-weight: bold; 
+}
+
+#searchForm input[type="text"] {
+    width: 70%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+#searchForm input[type="submit"] {
+    background-color: #355e3b; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+#searchForm input[type="submit"]:hover {
+    background-color: #8a9a5b; 
+}
+
+#searchResults {
+    color: #ffffff; 
+    border: 1px solid #ccc; 
+    border-radius: 50px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    max-width: 400px; 
+    width: 80%; 
+    background-color: #013220; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+#searchResults h3 {
+    margin-top: 0; 
+}
+
+#searchResults p {
+    margin-bottom: 5px;
+    font-size: 14px; 
+}
+
+#noResultsMessage {
+    color: #ffffff; 
+    font-style: italic; 
+}
+

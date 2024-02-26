@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LO3</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Library Of Our Own!</h1>
+    </header>
+    <header>
+        <h2>This site was made by : Beys ʕ⁠っ⁠•⁠ᴥ⁠•⁠ʔ⁠っ </h2>
+    </header>
+    <div class="container">
+        <div class="illustration">
+        <img src="C:\Users\hp\Desktop\hey.png"alt="Cute Illustration">
+    </div>
+    <div class="here">
+        <p> Here you can create your own digital library! 
+            Start with adding the books you already own and 
+            you can add more as you expend your library.</p>
+        <div class = "buttons">
+            <button id="button1">List Books</button>
+            <button id="button2">Add Books</button>
+            <button id="button3">Remove Books</button>
+            <button id="button4">Search Books</button>
+        </div>
+    </div>
+    <div id="bookList">
+        <!-- Book list will be dynamically added here -->
+    </div>
+    
+    <div id="panel1" class="panel">
+        <div id="bookContainer" class="book-container">
+            <!-- Inside the book card -->
+        </div>
+        <button class="backButton">Back</button> 
+    </div>
+    
+
+    <div id="panel2" class="panel">
+        <form id = "addBookForm">
+
+            <label for="btitle">Book Title:</label><br>
+            <input type="text" id="btitle" name="btitle"><br>
+
+            <label for="author">Book Author:</label><br>
+            <input type="text" id="author" name="author"><br>
+
+            <label for="genre">Books Genre:</label><br>
+            <input type="text" id="genre" name="genre"><br>
+            
+            <label for="releaseYear">Release Year:</label>
+            <input type="text" id="releaseYear" name="releaseYear"><br>
+
+            <label for="numPages">Number of Pages:</label>
+            <input type="text" id="numPages" name="numPages"><br><br>
+
+            <input type="submit" value="Add to library">
+
+          </form>
+        <button class="backButton">Back</button>
+    </div>
+
+    <div id="panel3" class="panel">
+
+            <form id="removeBookForm">
+                <label for="titleToRemove">Title of the Book:</label><br>
+                <input type="text" id="titleToRemove" name="titleToRemove" required><br>
+        
+                <label for="authorToRemove">Author of the Book:</label><br>
+                <input type="text" id="authorToRemove" name="authorToRemove" required><br>
+        
+                <input type="submit" value="Remove Book">
+            </form>""
+        <button class="backButton">Back</button>
+    </div>
+
+    <div id="panel4" class="panel">
+        <form id="searchForm">
+            <label for="searchTitle">Search by Title:</label><br>
+            <input type="text" id="searchTitle" name="searchTitle" required><br>
+    
+            <input type="submit" value="Search">
+        </form>
+        <div id="searchResults"></div> 
+        <button class="backButton">Back</button> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
